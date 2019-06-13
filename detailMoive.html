@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Project 1</title>
+    <link rel="stylesheet" href="css/detail.css" />
+
+    <!-- FONT Josefin -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,600i&amp;subset=vietnamese"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav id="fixedNav" class="navBar fixedNav">
+      <div class="left">MYCINEMA</div>
+      <ul class="right">
+        <li><a href="#">Trang chủ</a></li>
+        <li>
+          <a href="#">Phim</a>
+          <!-- <ul>
+                      <li>Phim đang chiếu</li>
+                      <li>Phim sắp chiếu</li>
+                    </ul> -->
+        </li>
+        <li><a href="#">Lịch chiếu</a></li>
+        <li><a href="#">Đặt vé</a></li>
+        <li><a href="#">Thông tin</a></li>
+      </ul>
+    </nav>
+    <section id="slideBackground">
+      <div>
+        <div class="m_container">
+          <div class="head">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-google-plus-g"></i></a>
+          </div>
+          <div class="navBar">
+            <div class="left">MYCINEMA</div>
+            <ul class="right">
+              <li><a href="#">Trang chủ</a></li>
+              <li>
+                <a href="#">Phim</a>
+                <!-- <ul>
+                            <li>Phim đang chiếu</li>
+                            <li>Phim sắp chiếu</li>
+                          </ul> -->
+              </li>
+              <li><a href="#">Lịch chiếu</a></li>
+              <li><a href="#">Đặt vé</a></li>
+              <li><a href="#">Thông tin</a></li>
+            </ul>
+          </div>
+          <div class="movie">
+            <div id="item1" class="item activeItem">
+              <div class="genre">Hành động, phiêu lưu, hài hước</div>
+              <div class="name">
+                Đẳng cấp thú cưng
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                impedit nihil ut totam, commodi non dolorum, voluptatum
+                accusamus ipsum numquam tenetur quisquam vitae, iure pariatur?.
+                . .
+              </p>
+              <button onclick="openShowVideo()">
+                <i class="fas fa-play"></i> PLAY TRAILER
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail">
+      <aside class="left">
+        <h3>tóm tắt</h3>
+        <div class="container">
+          <div class="left">
+            <div class="img"></div>
+            <div class="social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
+              <a href=""><i class="fab fa-google-plus-g"></i></a>
+            </div>
+          </div>
+          <div class="right">
+            <h3 class="name">Đẳng cấp thú cưng</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+              fugit ea facere porro repellendus dolorum sequi nihil dolore
+              similique iure, quidem nesciunt dicta expedita soluta voluptates.
+              Nulla beatae ex sit laudantium corrupti ad pariatur illo hic,
+              maiores a excepturi deserunt? Inventore minima fuga ratione unde,
+              natus itaque reiciendis enim quibusdam?
+            </p>
+            <div class="group">
+              <span>Tác giả</span>
+              <span>Anh ba hưng</span>
+            </div>
+            <div class="group">
+              <span>Ngôi sao</span>
+              <span>Nguyễn Văn A, Lâm Văn B, Lê Thị C</span>
+            </div>
+            <div class="group">
+              <span>Ngày phát hành</span>
+              <span>3 tháng 6, 2019</span>
+            </div>
+            <div class="group">
+              <span>Thời lượng</span>
+              <span>114 Phút</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <aside class="right">
+        <h3>
+          Lịch chiếu phim
+        </h3>
+        <div class="groupTime">
+          <div class="time">
+            <div class="date">Thứ 2</div>
+            <div class="hours">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+          <div class="time">
+            <div class="date">Thứ 3</div>
+            <div class="hours">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+          <div class="time">
+            <div class="date">Thứ 4</div>
+            <div class="hours">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+          <div class="time">
+            <div class="date">Thứ 5</div>
+            <div class="hours">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+          <div class="time">
+            <div class="date activeDate">Thứ 6</div>
+            <div class="hours">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+          <div class="time">
+            <div class="date">Thứ 7</div>
+            <div class="hours">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+          <div class="time">
+            <div class="date">Chủ Nhật</div>
+            <div class="hours">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+          <h2>HỆ THỐNG RẠP</h2>
+          <ul>
+            <li>Lorem ipsum dolor sit amet .</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </li>
+        <li>
+          <h2>Phim</h2>
+          <ul>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </li>
+        <li>
+          <h2>Thông tin</h2>
+          <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+          </ul>
+        </li>
+
+        <li>
+          <h2>Chính sách</h2>
+          <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+
+    <div class="showVideo">
+      <iframe
+        width="100%"
+        height="100%"
+        src="https://www.youtube.com/embed/uTixEKyuF7U"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

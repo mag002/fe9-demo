@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Project 1</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- FONT Josefin -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,600i&amp;subset=vietnamese"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- <div class="navBar">
+      <div class="left">MYCINEMA</div>
+      <ul class="center">
+        <li>Trang chủ</li>
+        <li>
+          Phim
+          <ul>
+            <li>Phim đang chiếu</li>
+            <li>Phim sắp chiếu</li>
+          </ul>
+        </li>
+        <li>Lịch chiếu</li>
+        <li>Đặt vé</li>
+        <li>Thông tin</li>
+      </ul>
+      <div class="right">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href=""><i class="fab fa-google-plus-g"></i></a>
+      </div>
+    </div>
+    <div class="background"></div> -->
+
+    <!-- NAVBAR -->
+    <nav id="fixedNav" class="navBar fixedNav">
+      <div class="left">MYCINEMA</div>
+      <ul class="right">
+        <li><a href="#">Trang chủ</a></li>
+        <li>
+          <a href="#movieNow">Phim</a>
+          <!-- <ul>
+                      <li>Phim đang chiếu</li>
+                      <li>Phim sắp chiếu</li>
+                    </ul> -->
+        </li>
+        <li><a href="#movieInWeek">Lịch chiếu</a></li>
+        <li><a href="#">Đặt vé</a></li>
+        <li><a href="#">Thông tin</a></li>
+      </ul>
+    </nav>
+    <section id="slideBackground">
+      <div>
+        <div class="m_container">
+          <div class="head">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-google-plus-g"></i></a>
+          </div>
+          <div class="navBar">
+            <div class="left">MYCINEMA</div>
+            <ul class="right">
+              <li><a href="#">Trang chủ</a></li>
+              <li>
+                <a href="#movieNow">Phim</a>
+                <!-- <ul>
+                            <li>Phim đang chiếu</li>
+                            <li>Phim sắp chiếu</li>
+                          </ul> -->
+              </li>
+              <li><a href="#movieInWeek">Lịch chiếu</a></li>
+              <li><a href="#">Đặt vé</a></li>
+              <li><a href="#">Thông tin</a></li>
+            </ul>
+          </div>
+          <div class="movie">
+            <div id="item1" class="item activeItem">
+              <div class="genre">Hành động, phiêu lưu, hài hước</div>
+              <div class="name">
+                Aladin
+              </div>
+              <p>
+                Kinh thành Agrabah phồn hoa, rực rỡ giữa lòng sa mạc, nơi luôn
+                có những cuộc náo loạn do chàng thanh niên Aladdin tạo ra . . .
+              </p>
+              <button onclick="openShowVideo()">
+                <i class="fas fa-play"></i> PLAY TRAILER
+              </button>
+            </div>
+
+            <div id="item2" class="item">
+              <div class="genre">hoạt hình ,hành động, phiêu lưu</div>
+              <div class="name">
+                Pokémon: Thám tử Pikachu
+              </div>
+              <p>
+                Câu chuyện Pokemon: Detetctive Pikachu (Thám tử Pikachu) xoay
+                quanh Tim, cậu bé duy nhất không có bất kì Pokemon nào cho riêng
+                mình, trên chuyến hành trình khám phá những bí ẩn đằng sau cái
+                chết của người cha, Harry Goodman . . .
+              </p>
+              <button onclick="openShowVideo()">
+                <i class="fas fa-play"></i> PLAY TRAILER
+              </button>
+            </div>
+
+            <div id="item3" class="item">
+              <div class="genre">Hành động, Phiêu lưu, Giả Tưởng</div>
+              <div class="name">
+                Avengers: Endgame
+              </div>
+              <p>
+                Avengers: Endgame là câu chuyện tiếp nối Avengers: Infinity War
+                cũng được công chiếu vào thời điểm này của năm ngoái. Trật tự
+                thế giới mới được hình thành sau cú búng tay của Thanos, . . .
+              </p>
+              <button onclick="openShowVideo()">
+                <i class="fas fa-play"></i> PLAY TRAILER
+              </button>
+            </div>
+            <!-- <div class="item">
+                  <div class="genre">Hành động, phiêu lưu, võ thuật</div>
+                  <div class="name">
+                    Hai Phượng
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+                    blanditiis officiis esse odio asperiores ipsam iste amet rem quis
+                    eveniet.
+                  </p>
+                  <button>PLAY TRAILER</button>
+                </div>
+                <div class="item">
+                  <div class="genre">Hành động, phiêu lưu, võ thuật</div>
+                  <div class="name">
+                    Hai Phượng
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+                    blanditiis officiis esse odio asperiores ipsam iste amet rem quis
+                    eveniet.
+                  </p>
+                  <button>PLAY TRAILER</button>
+                </div> -->
+            <div class="dotSlides">
+              <i
+                id="dot1"
+                class="far fa-circle activeDot"
+                onclick="show(1)"
+              ></i>
+              <i id="dot2" class="far fa-circle" onclick="show(2)"></i>
+              <i id="dot3" class="far fa-circle" onclick="show(3)"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHIM ĐANG CHIẾU  -->
+    <section id="movieNow" class="moviePlaying">
+      <h2>Phim đang chiếu</h2>
+      <hr />
+      <div class="container">
+        <i id="prevS2" class="fas fa-chevron-left"></i>
+        <div id="slider2" class="slider">
+          <div class="sliderDisplay">
+            <div
+              class="item _flexCenter"
+              style="background-image: url(images/haiphuong.jpeg)"
+            >
+              <div class="showContainer _flexCenter">
+                <button onclick="openShowVideo()" class="_flexCenter"><i class="fas fa-play"></i></button>
+                <span class="name">HAI PHƯỢNG</span>
+                <span class="vote">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star unstar"></i>
+                </span>
+                <a href="./detailMoive.html" class="more">xem thêm</a>
+              </div>
+            </div>
+
+            <div
+              class="item _flexCenter"
+              style="background-image: url(images/shazam.jpg)"
+            >
+              <div class="showContainer _flexCenter">
+                <button onclick="openShowVideo()" class="_flexCenter"><i class="fas fa-play"></i></button>
+                <span class="name">shazam</span>
+                <span class="vote">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star unstar"></i>
+                </span>
+                <a href="./detailMoive.html" class="more">xem thêm</a>
+              </div>
+            </div>
+
+            <div
+              class="item _flexCenter"
+              style="background-image: url(images/pokemon2.jpg)"
+            >
+              <div class="showContainer _flexCenter">
+                <button class="_flexCenter"><i class="fas fa-play"></i></button>
+                <span class="name">thám tử pokemon</span>
+                <span class="vote">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star unstar"></i>
+                </span>
+                <a href="./detailMoive.html" class="more">xem thêm</a>
+              </div>
+            </div>
+
+            <div
+              class="item _flexCenter"
+              style="background-image: url(images/paladin.jpg)"
+            >
+              <div class="showContainer _flexCenter">
+                <button onclick="openShowVideo()" class="_flexCenter"><i class="fas fa-play"></i></button>
+                <span class="name">paladin</span>
+                <span class="vote">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star unstar"></i>
+                </span>
+                <a href="./detailMoive.html" class="more">xem thêm</a>
+              </div>
+            </div>
+
+            <div
+              class="item _flexCenter"
+              style="background-image: url(images/iw.jpg)"
+            >
+              <div class="showContainer _flexCenter">
+                <button class="_flexCenter"><i class="fas fa-play"></i></button>
+                <span class="name">infinity war</span>
+                <span class="vote">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star unstar"></i>
+                </span>
+                <a href="./detailMoive.html" class="more">xem thêm</a>
+              </div>
+            </div>
+
+            <div
+              class="item _flexCenter"
+              style="background-image: url(images/hellboy_2.jpg)"
+            >
+              <div class="showContainer _flexCenter">
+                <button onclick="openShowVideo()" class="_flexCenter"><i class="fas fa-play"></i></button>
+                <span class="name">hellboy 2</span>
+                <span class="vote">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star unstar"></i>
+                </span>
+                <a href="./detailMoive.html" class="more">xem thêm</a>
+              </div>
+            </div>
+
+            <div
+              class="item _flexCenter"
+              style="background-image: url(images/coiam.jpg)"
+            >
+              <div class="showContainer _flexCenter">
+                <button onclick="openShowVideo()" class="_flexCenter"><i class="fas fa-play"></i></button>
+                <span class="name">cõi âm</span>
+                <span class="vote">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star unstar"></i>
+                </span>
+                <a href="./detailMoive.html" class="more">xem thêm</a>
+              </div>
+            </div>
+
+            <div
+              class="item _flexCenter"
+              style="background-image: url(images/cuavobau.jpg)"
+            >
+              <div class="showContainer _flexCenter">
+                <button onclick="openShowVideo()" class="_flexCenter"><i class="fas fa-play"></i></button>
+                <span class="name">cua lại vợ bầu</span>
+                <span class="vote">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star unstar"></i>
+                </span>
+                <a href="./detailMoive.html" class="more">xem thêm</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <i id="nextS2" class="fas fa-chevron-right"></i>
+      </div>
+    </section>
+
+    <!-- THÔNG TIN PHIM ĐANG CHIẾU TRONG TUẦN -->
+
+    <section id="movieInWeek" class="movieWeek">
+    <ul class="day">
+      <li id="day_mon"><a href="#">THỨ 2</a></li>
+      <li id="day_tue"><a href="#">THỨ 3</a></li>
+      <li id="day_wed" class="activeMovieWeek"><a href="#">HÔM NAY</a></li>
+      <li id="day_thu"><a href="#">THỨ 5</a></li>
+      <li id="day_fri"><a href="#">THỨ 6</a></li>
+      <li id="day_sat"><a href="#">THỨ BẢY</a></li>
+      <li id="day_sun"><a href="#">CHỦ NHẬT</a></li>
+    </ul>
+
+    <div id="mon" class="">
+      
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/endgame.jpg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, viễn tưởng, chiến tranh</div>
+          <div class="name">
+            End Game
+            <span class="duration">180</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            aliquam, vitae atque sequi exercitationem temporibus error tempore
+            eaque velit perspiciatis, animi rerum assumenda consectetur
+            laboriosam.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="movie">
+          <div class="avatar" style="background-image: url(images/haiphuong.jpeg)"></div>
+          <div class="info">
+            <div class="genre">Hành động, phiêu lưu, võ thuật</div>
+            <div class="name">
+              Hai Phượng
+              <span class="duration">107</span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+              blanditiis officiis esse odio asperiores ipsam iste amet rem quis
+              eveniet.
+            </p>
+            <a href="#">Xem đầy đủ lịch chiếu</a>
+            <div class="today">
+              <i class="far fa-clock">Thời gian chiếu</i>
+              <div class="allTime">
+                <span class="time hide">11:00</span>
+                <span class="time hide">16:00</span>
+                <span class="time">18:30</span>
+                <span class="time">20:15</span>
+                <span class="time">22:45</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/pokemon2.jpg)"></div>
+        <div class="info">
+          <div class="genre">Phiêu lưu, vui nhộn</div>
+          <div class="name">
+            THÁM TỬ PIKACHU
+            <span class="duration">170</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            amet, accusamus incidunt dolore quaerat optio adipisci quidem
+            molestiae itaque similique, quod, commodi facilis ut laboriosam
+            obcaecati eum. Repellendus, exercitationem ex.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">13:00</span>
+              <span class="time hide">15:30</span>
+              <span class="time">17:15</span>
+              <span class="time">18:20</span>
+              <span class="time">20:05</span>
+              <span class="time">20:30</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/hellboy_2.jpg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, hài hước, võ thuật</div>
+          <div class="name">
+            Hellboy 2
+            <span class="duration">180</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            aliquam, vitae atque sequi exercitationem temporibus error tempore
+            eaque velit perspiciatis, animi rerum assumenda consectetur
+            laboriosam.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tue" class="">
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/haiphuong.jpeg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, phiêu lưu, võ thuật</div>
+          <div class="name">
+            Hai Phượng
+            <span class="duration">107</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+            blanditiis officiis esse odio asperiores ipsam iste amet rem quis
+            eveniet.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/endgame.jpg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, viễn tưởng, chiến tranh</div>
+          <div class="name">
+            End Game
+            <span class="duration">180</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            aliquam, vitae atque sequi exercitationem temporibus error tempore
+            eaque velit perspiciatis, animi rerum assumenda consectetur
+            laboriosam.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/pokemon2.jpg)"></div>
+        <div class="info">
+          <div class="genre">Phiêu lưu, vui nhộn</div>
+          <div class="name">
+            THÁM TỬ PIKACHU
+            <span class="duration">170</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            amet, accusamus incidunt dolore quaerat optio adipisci quidem
+            molestiae itaque similique, quod, commodi facilis ut laboriosam
+            obcaecati eum. Repellendus, exercitationem ex.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">13:00</span>
+              <span class="time hide">15:30</span>
+              <span class="time">17:15</span>
+              <span class="time">18:20</span>
+              <span class="time">20:05</span>
+              <span class="time">20:30</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/hellboy_2.jpg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, hài hước, võ thuật</div>
+          <div class="name">
+            Hellboy 2
+            <span class="duration">180</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            aliquam, vitae atque sequi exercitationem temporibus error tempore
+            eaque velit perspiciatis, animi rerum assumenda consectetur
+            laboriosam.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="wed" class="showMovieWeek">
+      
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/endgame.jpg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, viễn tưởng, chiến tranh</div>
+          <div class="name">
+            End Game
+            <span class="duration">180</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            aliquam, vitae atque sequi exercitationem temporibus error tempore
+            eaque velit perspiciatis, animi rerum assumenda consectetur
+            laboriosam.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/pokemon2.jpg)"></div>
+        <div class="info">
+          <div class="genre">Phiêu lưu, vui nhộn</div>
+          <div class="name">
+            THÁM TỬ PIKACHU
+            <span class="duration">170</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            amet, accusamus incidunt dolore quaerat optio adipisci quidem
+            molestiae itaque similique, quod, commodi facilis ut laboriosam
+            obcaecati eum. Repellendus, exercitationem ex.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">13:00</span>
+              <span class="time hide">15:30</span>
+              <span class="time">17:15</span>
+              <span class="time">18:20</span>
+              <span class="time">20:05</span>
+              <span class="time">20:30</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/haiphuong.jpeg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, phiêu lưu, võ thuật</div>
+          <div class="name">
+            Hai Phượng
+            <span class="duration">107</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+            blanditiis officiis esse odio asperiores ipsam iste amet rem quis
+            eveniet.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/hellboy_2.jpg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, hài hước, võ thuật</div>
+          <div class="name">
+            Hellboy 2
+            <span class="duration">180</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            aliquam, vitae atque sequi exercitationem temporibus error tempore
+            eaque velit perspiciatis, animi rerum assumenda consectetur
+            laboriosam.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="thu" class="">
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/haiphuong.jpeg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, phiêu lưu, võ thuật</div>
+          <div class="name">
+            Hai Phượng
+            <span class="duration">107</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+            blanditiis officiis esse odio asperiores ipsam iste amet rem quis
+            eveniet.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/endgame.jpg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, viễn tưởng, chiến tranh</div>
+          <div class="name">
+            End Game
+            <span class="duration">180</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            aliquam, vitae atque sequi exercitationem temporibus error tempore
+            eaque velit perspiciatis, animi rerum assumenda consectetur
+            laboriosam.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/pokemon2.jpg)"></div>
+        <div class="info">
+          <div class="genre">Phiêu lưu, vui nhộn</div>
+          <div class="name">
+            THÁM TỬ PIKACHU
+            <span class="duration">170</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            amet, accusamus incidunt dolore quaerat optio adipisci quidem
+            molestiae itaque similique, quod, commodi facilis ut laboriosam
+            obcaecati eum. Repellendus, exercitationem ex.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">13:00</span>
+              <span class="time hide">15:30</span>
+              <span class="time">17:15</span>
+              <span class="time">18:20</span>
+              <span class="time">20:05</span>
+              <span class="time">20:30</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/hellboy_2.jpg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, hài hước, võ thuật</div>
+          <div class="name">
+            Hellboy 2
+            <span class="duration">180</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            aliquam, vitae atque sequi exercitationem temporibus error tempore
+            eaque velit perspiciatis, animi rerum assumenda consectetur
+            laboriosam.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="fri" class="">
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/endgame.jpg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, viễn tưởng, chiến tranh</div>
+          <div class="name">
+            End Game
+            <span class="duration">180</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            aliquam, vitae atque sequi exercitationem temporibus error tempore
+            eaque velit perspiciatis, animi rerum assumenda consectetur
+            laboriosam.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/haiphuong.jpeg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, phiêu lưu, võ thuật</div>
+          <div class="name">
+            Hai Phượng
+            <span class="duration">107</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+            blanditiis officiis esse odio asperiores ipsam iste amet rem quis
+            eveniet.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/pokemon2.jpg)"></div>
+        <div class="info">
+          <div class="genre">Phiêu lưu, vui nhộn</div>
+          <div class="name">
+            THÁM TỬ PIKACHU
+            <span class="duration">170</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            amet, accusamus incidunt dolore quaerat optio adipisci quidem
+            molestiae itaque similique, quod, commodi facilis ut laboriosam
+            obcaecati eum. Repellendus, exercitationem ex.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">13:00</span>
+              <span class="time hide">15:30</span>
+              <span class="time">17:15</span>
+              <span class="time">18:20</span>
+              <span class="time">20:05</span>
+              <span class="time">20:30</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/hellboy_2.jpg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, hài hước, võ thuật</div>
+          <div class="name">
+            Hellboy 2
+            <span class="duration">180</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            aliquam, vitae atque sequi exercitationem temporibus error tempore
+            eaque velit perspiciatis, animi rerum assumenda consectetur
+            laboriosam.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sat" class="">
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/haiphuong.jpeg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, phiêu lưu, võ thuật</div>
+          <div class="name">
+            Hai Phượng
+            <span class="duration">107</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+            blanditiis officiis esse odio asperiores ipsam iste amet rem quis
+            eveniet.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/endgame.jpg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, viễn tưởng, chiến tranh</div>
+          <div class="name">
+            End Game
+            <span class="duration">180</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            aliquam, vitae atque sequi exercitationem temporibus error tempore
+            eaque velit perspiciatis, animi rerum assumenda consectetur
+            laboriosam.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/pokemon2.jpg)"></div>
+        <div class="info">
+          <div class="genre">Phiêu lưu, vui nhộn</div>
+          <div class="name">
+            THÁM TỬ PIKACHU
+            <span class="duration">170</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            amet, accusamus incidunt dolore quaerat optio adipisci quidem
+            molestiae itaque similique, quod, commodi facilis ut laboriosam
+            obcaecati eum. Repellendus, exercitationem ex.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">13:00</span>
+              <span class="time hide">15:30</span>
+              <span class="time">17:15</span>
+              <span class="time">18:20</span>
+              <span class="time">20:05</span>
+              <span class="time">20:30</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/hellboy_2.jpg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, hài hước, võ thuật</div>
+          <div class="name">
+            Hellboy 2
+            <span class="duration">180</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            aliquam, vitae atque sequi exercitationem temporibus error tempore
+            eaque velit perspiciatis, animi rerum assumenda consectetur
+            laboriosam.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sun" class="">
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/haiphuong.jpeg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, phiêu lưu, võ thuật</div>
+          <div class="name">
+            Hai Phượng
+            <span class="duration">107</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+            blanditiis officiis esse odio asperiores ipsam iste amet rem quis
+            eveniet.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/endgame.jpg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, viễn tưởng, chiến tranh</div>
+          <div class="name">
+            End Game
+            <span class="duration">180</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            aliquam, vitae atque sequi exercitationem temporibus error tempore
+            eaque velit perspiciatis, animi rerum assumenda consectetur
+            laboriosam.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/pokemon2.jpg)"></div>
+        <div class="info">
+          <div class="genre">Phiêu lưu, vui nhộn</div>
+          <div class="name">
+            THÁM TỬ PIKACHU
+            <span class="duration">170</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            amet, accusamus incidunt dolore quaerat optio adipisci quidem
+            molestiae itaque similique, quod, commodi facilis ut laboriosam
+            obcaecati eum. Repellendus, exercitationem ex.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">13:00</span>
+              <span class="time hide">15:30</span>
+              <span class="time">17:15</span>
+              <span class="time">18:20</span>
+              <span class="time">20:05</span>
+              <span class="time">20:30</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="movie">
+        <div class="avatar" style="background-image: url(images/hellboy_2.jpg)"></div>
+        <div class="info">
+          <div class="genre">Hành động, hài hước, võ thuật</div>
+          <div class="name">
+            Hellboy 2
+            <span class="duration">180</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            aliquam, vitae atque sequi exercitationem temporibus error tempore
+            eaque velit perspiciatis, animi rerum assumenda consectetur
+            laboriosam.
+          </p>
+          <a href="#">Xem đầy đủ lịch chiếu</a>
+          <div class="today">
+            <i class="far fa-clock">Thời gian chiếu</i>
+            <div class="allTime">
+              <span class="time hide">11:00</span>
+              <span class="time hide">16:00</span>
+              <span class="time">18:30</span>
+              <span class="time">20:15</span>
+              <span class="time">22:45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+    <!-- THÔNG TIN PHIM SĂP CÓ -->
+    <section
+      id="comingSoon"
+      class="comingSoon"
+      style="background-image: url(images/chua-te-godzilla-2019_1558815495-big.jpg)"
+    >
+      <div>
+        <div class="container">
+          <h2>phim sắp chiếu</h2>
+          <div class="containerItems">
+            <div id="data_1" class="item showItem">
+              <div class="detail">
+                <div class="genre">Kỳ ảo, Khoa học viễn tưởng</div>
+                <div class="name">
+                  Chúa tể Godzilla
+                  <span class="duration">132</span>
+                </div>
+                <div class="date">31 tháng 5, 2019</div>
+                <p>
+                  Câu chuyện mới kể về những nỗ lực của cơ quan bí mật Monarch
+                  khi các thành viên của tổ chức đối mặt với những con quái vật
+                  có kích thước thần thánh được gọi chung là Titans, bao gồm
+                  Godzilla hùng mạnh, Mothra, Rodan và kẻ . . .
+                </p>
+                <a href="./detailMoive.html">Xem thêm</a>
+              </div>
+              <div class="video">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/B12REtkl2KY?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            
+            <div id="data_2" class="item">
+              <div class="detail">
+                <div class="genre">Phiêu lưu, Hài</div>
+                <div class="name">
+                  Đẳng cấp thú cưng 2
+                  <span class="duration">92</span>
+                </div>
+                <div class="date">1 tháng 6, 2019</div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis necessitatibus inventore, sunt rerum non recusandae
+                  molestiae reiciendis ab. Sapiente deleniti eum nihil reiciendis
+                  vitae assumenda fugiat officiis, rem iure libero! . . .
+                </p>
+                <a href="./detailMoive.html">Xem thêm</a>
+              </div>
+              <div class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/cc7qagjLwzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+  
+            <div id="data_3" class="item">
+              <div class="detail">
+                <div class="genre">Khoa học viễn tưởng, Hành động</div>
+                <div class="name">
+                  X-Men: Phượng hoàng bóng tối
+                  <span class="duration">120</span>
+                </div>
+                <div class="date">6 tháng 6, 2019</div>
+                <p>
+                  X-Men: Phượng hoàng bóng tối là một bộ phim siêu anh hùng sắp
+                  tới của Mỹ dựa trên những nhân vật X-Men của Marvel Comics, phân
+                  phối bởi 20th Century Fox. Bộ phim là phần thứ 13 trong loạt
+                  phim dị nhân, và là một khởi đầu của một bộ ba X-Men mới.
+                </p>
+                <a href="./detailMoive.html">Xem thêm</a>
+              </div>
+              <div class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/gxs4J9Q6wRw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+  
+            <div id="data_4" class="item">
+              <div class="detail">
+                <div class="genre">Giật gân, Thần bí</div>
+                <div class="name">
+                  Trùm, cớm và ác quỷ
+                  <span class="duration">110</span>
+                </div>
+                <div class="date">23 tháng 5, 2019</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Incidunt sequi numquam odit libero iure, ea ex dolor provident
+                  maiores tenetur enim dolorum nam pariatur delectus maxime
+                  temporibus corporis, excepturi nesciunt.
+                </p>
+                <a href="./detailMoive.html">Xem thêm</a>
+              </div>
+              <div class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Nn3dGGRkObo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+  
+            <div id="data_5" class="item">
+              <div class="detail">
+                <div class="genre"> Kinh dị, Hài </div>
+                <div class="name">
+                    Ngôi đền kỳ quái
+                  <span class="duration">110</span>
+                </div>
+                <div class="date">3 tháng 6, 2019</div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis necessitatibus inventore, sunt rerum non recusandae
+                  molestiae reiciendis ab. Sapiente deleniti eum nihil reiciendis
+                  vitae assumenda fugiat officiis, rem iure libero!
+                </p>
+                <a href="./detailMoive.html">Xem thêm</a>
+              </div>
+              <div class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/RmYmISpm_QQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+  
+            <div id="data_6" class="item">
+
+              <div class="detail">
+                <div class="genre">Giật gân, Lãng mạn</div>
+                <div class="name">
+                    Krasue: Nụ hôn ma quái
+                  <span class="duration">125</span>
+                </div>
+                <div class="date">5 tháng 6, 2019</div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum saepe doloribus numquam enim totam molestiae eum beatae non ad ratione velit, minima aliquid error sed.
+                </p>
+                <a href="./detailMoive.html">Xem thêm</a>
+              </div>
+              <div class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/XoQo7D1mykE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+  
+            <div id="data_7" class="item">
+              <div class="detail">
+                <div class="genre">Phiêu lưu, Hài</div>
+                <div class="name">
+                    Gấu trúc về nhà
+                  <span class="duration">75</span>
+                </div>
+                <div class="date">31 tháng 5, 2019</div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis necessitatibus inventore, sunt rerum non recusandae
+                  molestiae reiciendis ab. Sapiente deleniti eum nihil reiciendis
+                  vitae assumenda fugiat officiis, rem iure libero!
+                </p>
+                <a href="./detailMoive.html">Xem thêm</a>
+              </div>
+              <div class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/uTixEKyuF7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+  
+            <div id="data_8" class="item">
+              <div class="detail">
+                <div class="genre">Anime</div>
+                <div class="name">
+                    Doraemon: Nobita và Mặt Trăng phiêu lưu ký
+                  <span class="duration">91</span>
+                </div>
+                <div class="date">1 tháng 6, 2019</div>
+                <p>
+                    Doraemon: Nobita no Getsumen Tansa-ki hay còn được biết với tên tiếng Anh Doraemon: Nobita's Chronicle of the Moon Exploration và tên tiếng Việt chính thức là Doraemon
+                </p>
+                <a href="./detailMoive.html">Xem thêm</a>
+              </div>
+              <div class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/l1cttTpwpWw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sliderComingSoon">
+          <i id="prevS3" class="fas fa-chevron-left"></i>
+          <div id="slider3" class="slider">
+            <div class="sliderDisplay">
+              <div id="slider3_1" class="itemSlide activeItemSlide3">
+                <div
+                  class="img"
+                  style="background-image: url(images/Chua_te_Godzilla_bia_poster.jpg)"
+                ></div>
+                <div class="name">Chúa tể Godzilla</div>
+                <div class="date">31 tháng 5, 2019</div>
+              </div>
+
+              <div id="slider3_2" class="itemSlide ">
+                <div
+                  class="img"
+                  style="background-image: url(images/dangcapthucung.jpeg)"
+                ></div>
+                <div class="name">Đẳng cấp thú cưng 2</div>
+                <div class="date">1 tháng 6, 2019</div>
+              </div>
+
+              <div id="slider3_3" class="itemSlide ">
+                <div
+                  class="img"
+                  style="background-image: url(images/xmen.jpg)"
+                ></div>
+                <div class="name">X-Men: Phượng hoàng bóng tối</div>
+                <div class="date">6 tháng 6, 2019</div>
+              </div>
+
+              <div id="slider3_4" class="itemSlide ">
+                <div
+                  class="img"
+                  style="background-image: url(images/Gangster-Cop-Devil-2-poster.jpg)"
+                ></div>
+                <div class="name">Trùm, cớm và ác quỷ</div>
+                <div class="date">23 tháng 5, 2019</div>
+              </div>
+
+              <div id="slider3_5" class="itemSlide ">
+                <div
+                  class="img"
+                  style="background-image: url(images/ngoiden.jpg)"
+                ></div>
+                <div class="name">Ngôi đền kỳ quái</div>
+                <div class="date">3 tháng 6, 2019</div>
+              </div>
+
+              <div id="slider3_6" class="itemSlide ">
+                <div
+                  class="img"
+                  style="background-image: url(images/nuhonmaquai.jpg)"
+                ></div>
+                <div class="name">Krasue: Nụ hôn ma quái</div>
+                <div class="date">5 tháng 6, 2019</div>
+              </div>
+
+              <div id="slider3_7" class="itemSlide ">
+                <div
+                  class="img"
+                  style="background-image: url(images/gautrucvenha.jpg)"
+                ></div>
+                <div class="name">Gấu trúc về nhà</div>
+                <div class="date">31 tháng 5, 2019</div>
+              </div>
+
+              <div id="slider3_8" class="itemSlide ">
+                <div
+                  class="img"
+                  style="background-image: url(images/doremon.jpg)"
+                ></div>
+                <div class="name">
+                  Doraemon: Nobita và Mặt Trăng phiêu lưu ký
+                </div>
+                <div class="date">1 tháng 6, 2019</div>
+              </div>
+            </div>
+          </div>
+          <i id="nextS3" class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+          <h2>HỆ THỐNG RẠP</h2>
+          <ul>
+            <li>Lorem ipsum dolor sit amet .</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </li>
+        <li>
+          <h2>Phim</h2>
+          <ul>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </li>
+        <li>
+          <h2>Thông tin</h2>
+          <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+          </ul>
+        </li>
+
+        <li>
+          <h2>Chính sách</h2>
+          <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+
+    <div class="showVideo">
+      <iframe
+        width="100%"
+        height="100%"
+        src="https://www.youtube.com/embed/uTixEKyuF7U"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
